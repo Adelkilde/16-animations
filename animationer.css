@@ -1,0 +1,53 @@
+/* Animation 1: Falling
+   Bolden falder konstant fra oven. */
+.falling {
+  animation-name: falling;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes falling {
+  0% {
+    transform: translate(0, -300%);
+  }
+
+  100% {
+    transform: translate(0, 300%);
+  }
+}
+
+.bouncing {
+  animation: bouncing;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: translate(0, -150%);
+  }
+  50% {
+    transform: translate(0, 150%);
+  }
+  100% {
+    transform: translate(0, -150%);
+  }
+}
+
+.drop {
+  animation: drop;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translate(0, -300%);
+  }
+  50% {
+    transform: translate(-1, -150%);
+  }
+}
